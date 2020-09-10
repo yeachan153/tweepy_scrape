@@ -7,15 +7,15 @@ This repo takes the [twitter-scraper](https://github.com/bisguzar/twitter-scrape
 ### Dependencies
 1. Poetry - To install, you should have poetry installed. Follow the guide [here](https://python-poetry.org/docs/#installation).
 2. Python 3.7 - You can use pyenv to install on 3.7
+3. Pip `>=20.0.0`.
 
 ### Process
 After that, clone this repository and install it:
 ```
 git clone https://github.com/yeachan153/twitter_scrape_export.git
-poetry install git+https://github.com/yeachan153/twitter_scrape_export.git
+cd twitter_scrape_export
+poetry install
 ```
-
-If you encounter installation errors ensure you have pip `>=20.0.0`.
 
 ## Use Case
 At the moment, I simulate a twitter stream by writing to S3.
