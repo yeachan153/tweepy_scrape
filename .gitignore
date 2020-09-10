@@ -17,3 +17,7 @@ development
 
 # Packaging stuff
 *.egg-info
+*.whl
+
+# Zips
+*tar.gz
