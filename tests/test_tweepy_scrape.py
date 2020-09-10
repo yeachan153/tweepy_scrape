@@ -1,4 +1,4 @@
-from tweepy_scrape import __version__
+from twitter_scrape_fedex_case import __version__
 
 
 def test_version():

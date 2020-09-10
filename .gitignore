@@ -8,3 +8,16 @@ __pycache__
 
 # Other
 .DS_Store
+
+# Notebooks
+*.ipynb
+
+# Develop
+development
+
+# Packaging stuff
+*.egg-info
+*.whl
+
+# Zips
+*tar.gz
