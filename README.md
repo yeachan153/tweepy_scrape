@@ -9,11 +9,13 @@ This repo takes the [twitter-scraper](https://github.com/bisguzar/twitter-scrape
 2. Python 3.7 - You can use pyenv to install on 3.7
 
 ### Process
-After that, you can activate your poetry environment and install with:
+After that, clone this repository and install it:
 ```
-poetry shell  # Activates venv
-poetry add git+https://github.com/yeachan153/twitter_scrape_export.git
+git clone https://github.com/yeachan153/twitter_scrape_export.git
+poetry install git+https://github.com/yeachan153/twitter_scrape_export.git
 ```
+
+If you encounter installation errors ensure you have pip `>=20.0.0`.
 
 ## Use Case
 At the moment, I simulate a twitter stream by writing to S3.
