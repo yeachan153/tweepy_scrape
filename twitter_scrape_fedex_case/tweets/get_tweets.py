@@ -1,15 +1,12 @@
 from twitter_scraper import get_tweets
 from twitter_scrape_fedex_case.user.user_data import get_user_data
 from twitter_scrape_fedex_case.exporter.exporter import Exporter
-from datetime import datetime
 
 
 class TweetPipeline:
     """Class to scrape twitter posts
     and export them.
     """
-
-    YM = datetime.now().strftime("%Y%m")
 
     def __init__(self, export_pipeline: Exporter):
         """Initialises class and sets
@@ -38,4 +35,5 @@ class TweetPipeline:
             tweet_id = tweet["tweetId"]
             user_data = get_user_data(username)
             full_data = {**tweet, **user_data}
-            self.export_pipeline.export_json(full_data, f"{self.YM}/{tweet_id}.json")
+            key = full_data["time"].strftime("%Y%m%d")
+            self.export_pipeline.export_json(full_data, f"{key}/{tweet_id}.json")
