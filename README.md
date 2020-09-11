@@ -6,7 +6,7 @@ This repo takes the [twitter-scraper](https://github.com/bisguzar/twitter-scrape
 
 ### Dependencies
 1. Poetry - To install, you should have poetry installed. Follow the guide [here](https://python-poetry.org/docs/#installation).
-2. Python 3.7 - You can use pyenv to install on 3.7
+2. Python 3.7+ - You can use pyenv to install on 3.7+
 3. Pip `>=20.0.0`.
 
 ### Process
