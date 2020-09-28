@@ -8,6 +8,7 @@ This repo takes the [twitter-scraper](https://github.com/bisguzar/twitter-scrape
 1. Poetry - To install, you should have poetry installed. Follow the guide [here](https://python-poetry.org/docs/#installation).
 2. Python 3.7+ - You can use pyenv to install on 3.7+
 3. Pip `>=20.0.0`.
+4. Create S3 bucket: ```aws s3api create-bucket --bucket fedex-case --region eu-central-1 --create-bucket-configuration LocationConstraint=eu-central-1```
 
 ### Process
 After that, clone this repository and install it:
